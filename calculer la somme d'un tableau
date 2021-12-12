@@ -1,0 +1,2 @@
+var array = [2, 5, 1];
+array.reduce((a, b) => a + b, 0);
