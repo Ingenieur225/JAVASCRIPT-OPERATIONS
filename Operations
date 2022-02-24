@@ -2,6 +2,17 @@
 var array = [2, 5, 1];
 array.reduce((a, b) => a + b, 0);
 
+# AUTRE ALTERNATIVE
+const traveler = [
+    {  description: 'Senior', Amount: 50},
+    {  description: 'Senior', Amount: 50},
+    {  description: 'Adult', Amount: 75},
+    {  description: 'Child', Amount: 35},
+    {  description: 'Infant', Amount: 25 },
+];
+traveler.reduce((a, b) => a + (b['Amount'] || 0), 0);
+
+
 # CALCULER LA SOMME DES DONNEES E FONCTION DES UTILISATEURS
 var arr = [{ name: 'John', contributions: 2 }, { name: 'Mary', contributions: 4 }, { name: 'John', contributions: 1 }, { name: 'Mary', contributions: 1 }],
 result = [];
