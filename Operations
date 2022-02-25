@@ -12,6 +12,23 @@ const traveler = [
 ];
 traveler.reduce((a, b) => a + (b['Amount'] || 0), 0);
 
+# SUPRIMER LES DOUBLONS D'UN TABLEAU
+const listOfTags = [
+    { id: 1, label: "Hello", color: "red", sorting: 0 }, 
+    { id: 2, label: "World", color: "green", sorting: 1 }, 
+    { id: 3, label: "Hello", color: "blue", sorting: 4 }, 
+    { id: 4, label: "Sunshine", color: "yellow", sorting: 5 }, 
+    { id: 5, label: "Hello", color: "red", sorting: 6 }
+],
+keys = ['label', 'color'],
+filtered = listOfTags.filter(
+    (s => o => 
+        (k => !s.has(k) && s.add(k))
+        (keys.map(k => o[k]).join('|'))
+    )
+    (new Set)
+);
+
 
 # CALCULER LA SOMME DES DONNEES E FONCTION DES UTILISATEURS
 var arr = [{ name: 'John', contributions: 2 }, { name: 'Mary', contributions: 4 }, { name: 'John', contributions: 1 }, { name: 'Mary', contributions: 1 }],
